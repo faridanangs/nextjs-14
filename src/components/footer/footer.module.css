@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    gap: 10px;
+    color: gray;
+    max-width: 1536px;
+}
+
+.logo {
+    font-weight: bold;
+}
+.text{
+    font-size: 12px;
+}
+
+@media (max-width: 768px) {
+    .container{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: space-around;
+    }    
+}
