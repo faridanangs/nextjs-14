@@ -29,15 +29,17 @@ export default function RootLayout({ children }) {
       <html lang="en">
         <body className={inter.className}>
           <div className="container">
-            <Navbar />
             {showError ? (
               <div className="error-message-container">
                 <p className="error-message">Website ini hanya dapat diakses pada layar tablet atau lebih besar.</p>
               </div>
             ) : (
-              children
-            )}
+           <>
+         <Navbar />
+              {children}
             <Footer />
+      </>
+            )}
           </div>
         </body>
       </html>
